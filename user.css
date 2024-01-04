@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #8d0942;
+}
+
+/* HEADER */
+header {
+    background-color: #8d0942;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 40px
+}
+header h1 {
+    color: #fff;
+    font-size:2.5rem;
+    font-family: 'Poppins';
+}
+header span {
+    color: #eca8d6;
+}
+header .navegacao-primaria {
+    font-family: 'Roboto';
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+header .navegacao-primaria li a {
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    font-size: 1.3rem;
+}
+header .navegacao-primaria li a::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .9s;
+}
+header .navegacao-primaria li a:hover::after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid #ffabcf;
+}
+/*dowload cv secao*/
+.section-div {
+    animation: inicializar .9s forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div{ 
+    background-color: #8d0942;
+    align-self: start;
+    display: grid;
+    gap: 25px;
+}
+
+.section-div div h2 {
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #f7f7f7;
+}
+.section-div div p {
+    font-family: 'Karla';
+    font-weight: 300;
+    color: #f7f7f7;
+}
+.section-div div a{
+    font-family: 'Roboto';
+    justify-self:start ;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: 3px solid white;
+}
+.section-div img{
+    max-width: 30%;
+    border-radius: 3%;
+    width: 80vw;
+    text-align: left;
+}
+
+.digitando:after{
+    content:'|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+}
+@media only screen and (max-width: 886px){
+.section-div {
+    flex-direction: column;
+}
+
+.section-div img {
+     max-width: 100%;
+}
+}
+@keyframes pisca {
+    from {
+        opacity: 1;
+    }
+    
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+/*SECAO PRINCIPAL SOBRE MIM */
+
+ main {
+    background-color: #000;
+    color: white;
+    font-family: 'Karla';
+ }
+ main .sobre {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+.sobre_titulo{
+    margin: 35px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+}
+.sobre_titulo h1 {
+    font-size: 2.0rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-family: 'Karla';
+}
+.sobre_titulo p {
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.sobre_titulo div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.sobre_titulo span{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #b10079;
+}
+.sobre img{
+    animation: ladoSecao .5s ease-in-out forwards;
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 85%;
+    border-radius: 3%;
+    filter: blur(0);
+}
+.sobre img:hover{
+    transition: .5s ease-in;
+    filter: blur(1px);
+}
+.sobre_conteudo {
+    animation: sobeSecao .6s ease-in-out forwards;
+    grid-column: 2/-1;
+    display: grid;
+    color: #707070;
+    grid-template-columns: 1fr 1fr;
+}
+.sobre_texto {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+}
+.sobre_texto h1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    grid-column: 1/-1;
+}
+.sobre_texto h1 ::after{
+    background-color: #b10079;
+    height: 6px;
+    width: 60px;
+    margin: 20px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+}
+.sobre_texto p{
+    font-size: 1.0rem;
+    grid-row: 2;
+    color: #fff;
+}
+.sobre_info {
+    display: grid;
+}
+.sobre_info i {
+    color:#f869d9;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+.sobre_info p{
+    font-size: .9rem;
+    color: #fff;
+}
+@keyframes sobeSecao {
+    from{
+        transition: .5s;
+        transform: translate3d(60px, 0, 0);
+
+    }
+    to{
+        transform: translate(0, 0, 0);
+    }
+}
+@keyframes ladoSecao {
+    from{
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
+
+    }
+    to{
+        transform: translate(0, 0, 0);
+    }
+}
+/*reponsivo*/
+@media(max-width: 992px){
+
+    
+    header i {
+        color:#f7f7f7;
+        font-size: 3rem;
+    }
+}
+@media(max-width: 992px){
+    .sobre img {
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+    .sobre_conteudo {
+        grid-column: 1/-1;
+    }
+}
+/*secao services*/
+.services{
+    margin-top: -2px;
+    padding: 10px;
+    background-color: #151515;
+    border-radius: 20px;
+}
+.my_services {
+    padding: 70px;
+    color: white;
+}
+.my_services ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.my_services ul li{
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    padding: 50px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    max-width: 300px;
+    align-content: center;
+    height: 300px;
+    background-color: #222;
+}
+
+.my_services ul li i{
+    font-size: 2.7 rem;
+    color: #ffffff;
+}
+.my_services ul li h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+.my_services ul li p{
+    color:#707070;
+    font-size: 1.1rem;
+}
+.my_services li::before{
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width:0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+.my_services li::after{
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+.my_services li:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #b10079;
+    border-right: 2px solid #b10079;
+}
+.my_services li:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #b10079;
+    border-left: 2px solid #b10079;
+}
+
+/* botão da pagina inicial */
+/* Adicione estilos para o botão de volta à página inicial */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b30071; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
+    font-family: 'Karla', Arial, sans-serif;
+}
+
+/* Estilizar o botão quando o mouse estiver sobre ele */
+.back-button:hover {
+    background-color:#f28bda;  /* Cor de fundo do botão ao passar o mouse */
+}

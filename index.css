@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+body{
+    font-family: 'Karla';
+    background: #f397f2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+section{
+    min-height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 30px;
+}
+.top{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #d5cccc24;
+}
+.top span{
+    font-size: 10px;
+    margin-left: 20px;
+}
+.top i{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 30%;
+    background-color: #fff;
+}
+.top i:hover{
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    background-color: #fff;
+    }
+.top p{
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background: rgba(0,0,0,0.15);
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    }
+.top i:hover ~ p{
+        opacity: 1;
+        transition: .5s ease-in-out;
+    }
+.middle {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px 0px 30px;
+}
+.middle img{
+        width: 100%;
+        max-width: 140px;
+        border-radius: 20%;
+        border: 5px solid transparent;
+        outline: 3px dashed rgba(125, 117, 117, 0.404);
+}
+.middle .right{
+    margin: 5px 2px 5px 20px;
+}
+ul li{
+    list-style-type: circle;
+    font-size: 12px;
+}
+.social-icon{
+    display: flex;
+    flex-direction: center;
+}
+.social-icon span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 35%;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+.social-icon i{
+    font-size: 20px;
+    color: rgb(228, 118, 191)
+}
+.social-icon span:hover{
+    color: #ffffff;
+    background: #fff;
+    transform: translateY(-4px);
+    box-shadow: inset 0 0 0 15px #ffffff;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 0 30px;
+}
+.btn{
+    background-color: #ffffff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
+
+.middle .righte{
+    margin: 20px 0px 10px 50px;
+}
+ul li{
+    list-style-type: circle;
+}
+.social-icone{
+    display: flex;
+    flex-direction: center;
+}
+.social-icone span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 35%;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+.social-icone i{
+    font-size: 20px;
+    color: rgb(228, 118, 191)
+}
+.social-icone span:hover{
+    color: #ffffff;
+    background: #fff;
+    transform: translateY(-4px);
+    box-shadow: inset 0 0 0 15px #ffffff;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 0 30px;
+}
+.btn{
+    background-color: #ffffff;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* ajuda do chat gpt */
+
+.card {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*página user*/
+header {
+    background-color: #000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header h1 {
+    color: #fff;
+    font-size:2.5rem;
+}
+header span {
+    color: #b10079;
+}
+header .navegacao-primaria {
+    font-family: 'Roboto';
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+header .navegacao-primaria li a {
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    font-size: 1.3rem;
+}
+header .navegacao-primaria li a::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .9s;
+}
+header .navegacao-primaria li a:hover::after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid #b10079;
+}
