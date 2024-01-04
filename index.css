@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
 body{
     font-family: 'Karla';
-    background: #f397f2;
+    background: url(images/estrelas.jpg) ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,9 +96,11 @@ ul li{
     transition: .4s;
     cursor: pointer;
 }
+
+/* cor dos primeiro icones */
 .social-icon i{
     font-size: 20px;
-    color: rgb(228, 118, 191)
+    color: rgb(104, 15, 74)
 }
 .social-icon span:hover{
     color: #ffffff;
@@ -123,8 +125,6 @@ ul li{
 }
 
 
-
-
 .middle .righte{
     margin: 20px 0px 10px 50px;
 }
@@ -147,9 +147,11 @@ ul li{
     transition: .4s;
     cursor: pointer;
 }
+
+/* cor dos segundos icones */
 .social-icone i{
     font-size: 20px;
-    color: rgb(228, 118, 191)
+    color: rgb(104, 15, 74)
 }
 .social-icone span:hover{
     color: #ffffff;
@@ -188,46 +190,4 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/*página user*/
-header {
-    background-color: #000;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-header h1 {
-    color: #fff;
-    font-size:2.5rem;
-}
-header span {
-    color: #b10079;
-}
-header .navegacao-primaria {
-    font-family: 'Roboto';
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-header .navegacao-primaria li a {
-    color: #fff;
-    width: 0px;
-    height: 0px;
-    font-size: 1.3rem;
-}
-header .navegacao-primaria li a::after{
-    content: '';
-    width: 0px;
-    height: 0px;
-    display: block;
-    border-bottom: 4px solid transparent;
-    transition: .9s;
-}
-header .navegacao-primaria li a:hover::after{
-    width: 100%;
-    height: 0px;
-    padding: 0px;
-    border-bottom: 4px solid #b10079;
 }
