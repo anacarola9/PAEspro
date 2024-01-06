@@ -21,6 +21,7 @@ body {
 header {
     background-color: #ad9ca3;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border: 40px
@@ -29,6 +30,14 @@ header h1 {
     color: #fff;
     font-size:2.5rem;
     font-family: 'Poppins';
+}
+header h2 {
+    color: #fff;
+    font-size:1.0rem;
+    font-family: 'Poppins';
+    border-radius: 9px; /* Cantos arredondados */
+    padding: 10px 10px;
+    border: 2px solid rgb(199, 125, 157);    
 }
 header span {
     color: #a23369;
@@ -66,7 +75,7 @@ header .navegacao-primaria li a:hover::after{
     justify-content: space-around;
     align-items: center;
     gap: 60px;
-    padding: 60px;
+    padding: 20px;
 }
 
 .section-div div{ 
@@ -77,9 +86,10 @@ header .navegacao-primaria li a:hover::after{
 }
 
 .section-div div h2 {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     font-weight: 600;
     color: #f7f7f7;
+    font-size: 1.0rem;
 }
 .section-div div p {
     font-family: 'Karla';
@@ -87,12 +97,13 @@ header .navegacao-primaria li a:hover::after{
     color: #f7f7f7;
 }
 .section-div div a{
-    font-family: 'Roboto';
-    justify-self:start ;
+    font-family: 'Poppins';
+    justify-self:start;
     color: #fff;
-    padding: 15px 40px;
-    border-radius: 8px;
-    border: 3px solid white;
+    padding: 10px 30px;
+    border-radius: 9px;
+    border: 3px solid rgb(199, 125, 157);
+    
 }
 .section-div img{
     max-width: 30%;
@@ -361,20 +372,3 @@ header .navegacao-primaria li a:hover::after{
     border-left: 2px solid #b10079;
 }
 
-/* botão da pagina inicial */
-/* Adicione estilos para o botão de volta à página inicial */
-.back-button {
-    display: inline-block;
-    padding: 10px 10px;
-    background-color: #484648; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    text-decoration: none;
-    border-radius: 5px; /* Cantos arredondados */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
-    font-family: 'Karla', Arial, sans-serif;
-}
-
-/* Estilizar o botão quando o mouse estiver sobre ele */
-.back-button:hover {
-    background-color:#8a3778;  /* Cor de fundo do botão ao passar o mouse */
-}
